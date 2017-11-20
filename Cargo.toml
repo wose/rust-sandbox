@@ -3,4 +3,12 @@ name = "rust-sandbox"
 version = "0.1.0"
 authors = ["Sebastian Woetzel <wose@zuendmasse.de>"]
 
+build = "build.rs"
+
+[build-dependencies]
+capnpc = "*"
+
 [dependencies]
+capnp = "*"
+capnp-rpc = "*"
+multiqueue = "*"
